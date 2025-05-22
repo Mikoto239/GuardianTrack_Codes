@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Shadow layer -->
+    <item>
+        <shape>
+            <solid android:color="#50000000" /> <!-- Shadow color (semi-transparent black) -->
+            <corners
+                android:topLeftRadius="7dp"
+                android:bottomLeftRadius="7dp"
+                android:topRightRadius="7dp"
+                android:bottomRightRadius="7dp" /> <!-- Slightly larger radius for shadow -->
+        </shape>
+    </item>
+
+    <!-- Main shape layer -->
+    <item android:top="2dp" android:left="2dp" android:bottom="2dp"> <!-- Offset to create shadow effect -->
+        <shape>
+            <solid android:color="@color/system_control_activated_light" />
+            <corners
+                android:topLeftRadius="5dp"
+                android:bottomLeftRadius="5dp"
+                android:topRightRadius="5dp"
+                android:bottomRightRadius="5dp" />
+        </shape>
+    </item>
+</layer-list>

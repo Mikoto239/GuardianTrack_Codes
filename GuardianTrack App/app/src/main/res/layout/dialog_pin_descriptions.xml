@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/transparent"
+    android:gravity="center_vertical">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pin Descriptions"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:textColor="@android:color/black"/>
+
+    <!-- User Location Pin -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_border">
+
+        <ImageView
+            android:id="@+id/pin_user_location"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="12dp"
+            android:contentDescription="User Location Pin"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Location"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <!-- Parking Pin -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_border"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <ImageView
+            android:id="@+id/pin_parking"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="12dp"
+            android:contentDescription="Parking Pin"
+            android:src="@drawable/parkinglot" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Parking Lot"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Police Station Pin -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_border">
+
+        <ImageView
+            android:id="@+id/pin_police_station"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="12dp"
+            android:contentDescription="Police Station Pin"
+            android:src="@drawable/police" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Police Station"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <!-- Hardware Location Pin -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_border">
+
+        <ImageView
+            android:id="@+id/pin_hardware_location"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="12dp"
+            android:contentDescription="Hardware Location Pin"
+            android:src="@drawable/park" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pinned Location of Vehicle"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <!-- Theft Location Pin -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_border">
+
+        <ImageView
+            android:id="@+id/pin_theft_location"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="12dp"
+            android:contentDescription="Theft Location Pin"
+            android:src="@drawable/theft" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stolen Vehicle Location"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+</LinearLayout>

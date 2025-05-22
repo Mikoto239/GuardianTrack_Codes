@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Padding for the entire layer list -->
+    <padding
+        android:left="0dp"
+        android:top="0dp"
+        android:right="0dp"
+        android:bottom="0dp" />
+
+    <!-- Shadow layer (moved to the bottom) -->
+    <item android:top="2dp"> <!-- Offset the shadow to the bottom -->
+        <shape>
+            <solid android:color="#50000000" /> <!-- Shadow color (semi-transparent black) -->
+            <corners
+                android:topLeftRadius="5dp"
+                android:bottomLeftRadius="5dp"
+                android:topRightRadius="5dp"
+                android:bottomRightRadius="5dp" /> <!-- Rounded corners for shadow -->
+        </shape>
+    </item>
+
+    <!-- Main shape layer -->
+    <item android:top="0dp" android:left="2dp" android:right="2dp" android:bottom="2dp"> <!-- Slight offsets for main shape -->
+        <shape>
+            <solid android:color="@color/system_control_activated_light" />
+            <corners
+                android:topLeftRadius="5dp"
+                android:bottomLeftRadius="5dp"
+                android:topRightRadius="5dp"
+                android:bottomRightRadius="5dp" /> <!-- Rounded corners for main shape -->
+        </shape>
+    </item>
+
+</layer-list>

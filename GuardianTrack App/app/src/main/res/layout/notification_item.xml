@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- notification_item.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backgroundhistory"
+    android:layout_marginBottom="16dp"
+    android:layout_marginEnd="16dp"> <!-- Right margin added -->
+
+    <!-- Main Content Layout -->
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Address TextView -->
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: "
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:background="@drawable/historypinlocation"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+
+        <!-- Time TextView -->
+
+
+        <!-- Date TextView -->
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+        android:background="@drawable/historypinlocation"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+            android:layout_marginBottom="8dp"
+        android:text="Date: "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+       />
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Time: "
+            android:background="@drawable/historypinlocation"
+            android:textSize="16sp"
+
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+           />
+
+        <Button
+            android:id="@+id/showonmap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/white"
+            android:background="@drawable/historybutton"
+        android:textStyle="bold"
+        android:text="Show on map" />
+
+
+    </LinearLayout>
+
+    <!-- Close Map Button -->
+    <Button
+        android:id="@+id/closeMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="#003366"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+    android:visibility="gone"
+    android:text="Close Map" />
+
+    <!-- MapView -->
+    <FrameLayout
+        android:id="@+id/map_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:visibility="gone"
+        android:layout_below="@id/content_layout"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="8dp" />
+
+</RelativeLayout>

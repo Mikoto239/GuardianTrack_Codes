@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+    <group android:id="@+id/group1">
+    <item
+        android:id="@+id/nav_account"
+        android:title="My Account"
+        android:icon="@drawable/person"/>
+    </group>
+    <group android:id="@+id/group2">
+        <item
+            android:id="@+id/nav_history"
+            android:title="Notification"
+            android:icon="@drawable/history"/>
+        <item
+            android:id="@+id/nav_notification"
+            android:title="History"
+            android:icon="@drawable/history"/>
+
+    </group>
+    <group android:id="@+id/group3">
+    <item
+        android:id="@+id/nav_usermanual"
+        android:title="User Manual"
+        android:icon="@drawable/usermanual"/>
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Settings"
+        android:icon="@drawable/settings"/>
+    </group>
+    <group android:id="@+id/group4">
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout" />
+    </group>
+</menu>

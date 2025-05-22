@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="2dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="2dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/rounded_backgroundard"
+    android:orientation="vertical">
+
+    <!-- Title Section -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center_horizontal"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:text="Theft Alert!"
+        android:textColor="#5C0000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Horizontal Layout for Left Side (Severity, Date, Time) and Right Side (Address, Description) -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <!-- Left Side (Severity, Date, Time) -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="20dp">
+
+            <TextView
+                android:id="@+id/theftlevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Severity:"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:background="@drawable/historypinlocation"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address:"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:background="@drawable/historypinlocation"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"/>
+
+
+
+
+
+        </LinearLayout>
+
+        <!-- Right Side (Description, Address) -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+           >
+
+
+
+            <TextView
+                android:id="@+id/theftdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date:"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:background="@drawable/historypinlocation"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/thefttime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time:"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:background="@drawable/historypinlocation"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/theftdescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description:"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:background="@drawable/historypinlocation"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

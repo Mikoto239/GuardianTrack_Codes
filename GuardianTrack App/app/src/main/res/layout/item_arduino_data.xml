@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:background="@drawable/rounded_backgroundard"
+    android:orientation="vertical">
+
+    <!-- Alert Title -->
+    <TextView
+        android:id="@+id/typevibration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Vibration Alert!"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Main Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp">
+
+        <!-- Left Section: Severity, Date, Time -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/vibratelevel"
+                android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingEnd="5dp"
+            android:background="@drawable/historypinlocation"
+            android:text="Severity:"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="normal" />
+
+            <!-- Date -->
+            <TextView
+                android:id="@+id/arduinodate"
+                android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:paddingStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/historypinlocation"
+            android:text="Date:"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="normal" />
+
+            <!-- Time -->
+            <TextView
+                android:id="@+id/arduinotime"
+                android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+                android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/historypinlocation"
+            android:text="Time:"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="normal" />
+        </LinearLayout>
+
+        <!-- Right Section: Description -->
+        <TextView
+            android:id="@+id/arduinoVibrationDurationTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/historypinlocation"
+            android:gravity="top"
+            android:layout_marginBottom="5dp"
+            android:paddingStart="5dp"
+            android:text="Description: This is a dynamically adjustable text field. Add more text here, and it will expand to fit the content."
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+</LinearLayout>
